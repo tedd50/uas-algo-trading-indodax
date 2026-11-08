@@ -8,7 +8,7 @@ plus backtest ≥ 3 tahun dengan data historis asli Indodax dan dashboard pemban
 - Soal: Soal UAS Algoritma Trading — Bot Dry Run Indodax di Vercel (berkas dosen, tidak disertakan di repo publik)
 - Strategi tertulis + perubahan dari UTS: [`STRATEGI.md`](STRATEGI.md)
 - Refleksi: [`REFLEKSI.md`](REFLEKSI.md) (ikut tampil di dashboard)
-- Link Vercel: `https://<proyek>.vercel.app` *(isi setelah deploy)* · Repo: `https://github.com/<user>/<repo>` *(isi)*
+- Link Vercel (dashboard): https://uas-algo-trading-indodax.vercel.app · Repo: https://github.com/tedd50/uas-algo-trading-indodax
 
 ## Freeze
 
