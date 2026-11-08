@@ -9,3 +9,4 @@ tests/
 dashboard/
 .localstore/
 .github/
+scheduler/

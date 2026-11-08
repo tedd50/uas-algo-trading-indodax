@@ -30,7 +30,12 @@ Riwayat commit tidak boleh ditulis ulang (tanpa force-push).
 > 18 Nov 2026, sehingga pengumpulan terlambat dari tenggat. Bot mengabaikan candle yang tertutup sebelum
 > `FORWARD_START_UTC` (status `before_forward_start`), sehingga state awal bot = state awal backtest ulang.
 
-Catatan perbaikan selama forward test: *(belum ada)*
+Catatan operasional selama forward test (tidak mengubah aturan, parameter, atau universe; juga tercatat di log `events` lewat `/api/admin?action=note`):
+
+| Waktu (UTC) | Catatan |
+|---|---|
+| 2026-11-08 17:36 | Jadwal GitHub Actions tidak berjalan sama sekali sejak diaktifkan 15:14 UTC. Candle 15:00 (tutup 16:00) **terlewat**; candle 16:00 diproses lewat panggilan manual `src=manual-catchup` (masih tepat waktu). |
+| 2026-11-08 17:40 | Ditambahkan penjadwal kedua: Google Apps Script tiap 15 menit (`scheduler/apps_script.gs`). GitHub Actions tetap aktif sebagai cadangan; idempotency mencegah candle diproses dua kali. |
 
 ## Struktur
 
@@ -96,7 +101,9 @@ python3 tests/replay_test.py --hours 240 --out /tmp/replay    # uji integrasi: s
 5. Penjadwal (timeframe 1 jam; Vercel Cron Hobby hanya 1×/hari):
    - **GitHub Actions** `.github/workflows/tick.yml` — menit 7, 22, 37, 52 tiap jam. Isi *repo secrets*
      `TICK_URL=https://<proyek>.vercel.app/api/tick` dan `CRON_SECRET`.
-   - Disarankan cadangan **cron-job.org** (gratis): URL yang sama, metode POST, header
+   - **Google Apps Script** (`scheduler/apps_script.gs`): time-driven trigger tiap 15 menit,
+     `src=apps-script`; secret disimpan di Script Properties, bukan di kode.
+   - Alternatif cadangan lain: **cron-job.org** (gratis): URL yang sama, metode POST, header
      `Authorization: Bearer <CRON_SECRET>`, jadwal menit 9 tiap jam, URL `.../api/tick?src=cronjob-org`.
    - `vercel.json` juga memasang Vercel Cron harian 00.17 UTC sebagai cadangan terakhir.
    Banyak pemanggil aman karena idempotency: candle yang sama hanya diproses sekali.
