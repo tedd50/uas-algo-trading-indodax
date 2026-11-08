@@ -110,6 +110,14 @@ Endpoint:
 | `POST /api/admin?action=kill_on` / `kill_off` / `note&msg=` · `GET ?action=status` | `CRON_SECRET` | kill switch & catatan, tanpa deploy ulang |
 | `GET /api/health` | `CRON_SECRET` | uji koneksi Indodax & storage |
 
+### Uji koneksi sebelum freeze (8 Nov 2026, ±15.04 UTC)
+
+- `GET /api/health` dari fungsi Vercel: `indodax_ok: true` (server_time, order book 150/150 level,
+  history_v2), `store_ok: true` (Upstash Redis).
+- Tanpa header / secret salah → `/api/tick` dan `/api/admin` menjawab 401.
+- Tick uji coba di Vercel memakai namespace `KEY_PREFIX=uas_test` (bukan `uas`), sehingga log forward
+  test di namespace `uas` hanya berisi panggilan setelah freeze.
+
 ## Log mentah (storage `uas:log:<nama>`, ekspor ke `logs/<nama>.jsonl`)
 
 | Log | Isi per baris |
