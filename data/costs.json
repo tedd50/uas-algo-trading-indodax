@@ -1,0 +1,74 @@
+{
+  "ref_order_idr": 15000000.0,
+  "until": null,
+  "generated_utc": "2026-11-08T14:38:40Z",
+  "n_snapshots_total": 6,
+  "pairs": {
+    "btcidr": {
+      "n": 1,
+      "first_ts": 1794148718,
+      "last_ts": 1794148718,
+      "half_spread": 0.00010119924748530791,
+      "spread_pct_median": 0.020239849497061584,
+      "spread_pct_p90": 0.020239849497061584,
+      "slip_buy": 0.0001877155913738715,
+      "slip_sell": 0.0007270690336195207,
+      "depth_ok_share": 1.0
+    },
+    "xrpidr": {
+      "n": 1,
+      "first_ts": 1794148719,
+      "last_ts": 1794148719,
+      "half_spread": 0.000690953277262872,
+      "spread_pct_median": 0.1381906554525744,
+      "spread_pct_p90": 0.1381906554525744,
+      "slip_buy": 0.0001228546857634516,
+      "slip_sell": 0.0,
+      "depth_ok_share": 1.0
+    },
+    "ethidr": {
+      "n": 1,
+      "first_ts": 1794148719,
+      "last_ts": 1794148719,
+      "half_spread": 0.0003707823507601038,
+      "spread_pct_median": 0.07415647015202076,
+      "spread_pct_p90": 0.07415647015202076,
+      "slip_buy": 0.0,
+      "slip_sell": 0.0,
+      "depth_ok_share": 1.0
+    },
+    "dogeidr": {
+      "n": 1,
+      "first_ts": 1794148720,
+      "last_ts": 1794148720,
+      "half_spread": 0.000777000777000777,
+      "spread_pct_median": 0.1554001554001554,
+      "spread_pct_p90": 0.1554001554001554,
+      "slip_buy": 0.0,
+      "slip_sell": 0.0,
+      "depth_ok_share": 1.0
+    },
+    "trxidr": {
+      "n": 1,
+      "first_ts": 1794148720,
+      "last_ts": 1794148720,
+      "half_spread": 0.0012085635359116022,
+      "spread_pct_median": 0.24171270718232044,
+      "spread_pct_p90": 0.24171270718232044,
+      "slip_buy": 0.0,
+      "slip_sell": 0.0,
+      "depth_ok_share": 1.0
+    },
+    "bnbidr": {
+      "n": 1,
+      "first_ts": 1794148720,
+      "last_ts": 1794148720,
+      "half_spread": 0.002201477499866446,
+      "spread_pct_median": 0.44029549997328915,
+      "spread_pct_p90": 0.44029549997328915,
+      "slip_buy": -1.1102230246251565e-16,
+      "slip_sell": 0.0,
+      "depth_ok_share": 1.0
+    }
+  }
+}

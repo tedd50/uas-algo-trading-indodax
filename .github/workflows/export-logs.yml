@@ -1,0 +1,26 @@
+# Setiap hari menyalin log mentah dari dashboard publik ke repo (logs/*.jsonl), sehingga
+# riwayat log ikut tercatat di commit (jejak audit). Hanya menulis folder logs/.
+# Secret repo: DASHBOARD_URL (https://<proyek>.vercel.app)
+name: export-logs
+on:
+  schedule:
+    - cron: "41 1 * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/export_logs.py --url "${{ secrets.DASHBOARD_URL }}"
+      - run: |
+          git config user.name "log-export-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add logs/
+          git diff --cached --quiet || git commit -m "log: ekspor harian $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

@@ -1,0 +1,11 @@
+data/candles/
+data/forward_candles/
+data/snapshots/
+logs/
+results/*.csv
+results/*.log
+docs/
+tests/
+dashboard/
+.localstore/
+.github/

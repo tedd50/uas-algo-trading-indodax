@@ -1,0 +1,108 @@
+kandidat: 432
+  0/432
+  25/432
+  50/432
+  75/432
+  100/432
+  125/432
+  150/432
+  175/432
+  200/432
+  225/432
+  250/432
+  275/432
+  300/432
+  325/432
+  350/432
+  375/432
+  400/432
+  425/432
+{
+  "criteria": {
+    "measure_window_utc": [
+      "2023-08-03T00:00:00Z",
+      "2023-11-01T00:00:00Z"
+    ],
+    "min_days_traded": 85,
+    "rank_by": "median daily IDR turnover (close x volume), candle 1D history_v2",
+    "excluded_pegged": [
+      "ausd",
+      "bidr",
+      "busd",
+      "dai",
+      "eurt",
+      "fdusd",
+      "idrt",
+      "paxg",
+      "pyusd",
+      "rlusd",
+      "tusd",
+      "usd1",
+      "usdc",
+      "usdd",
+      "usde",
+      "usdp",
+      "usdt",
+      "xaut",
+      "xsgd"
+    ],
+    "top_n": 6,
+    "selected_at_utc": "2026-11-08T14:37:51Z"
+  },
+  "pairs": [
+    {
+      "pair": "btcidr",
+      "symbol": "BTCIDR",
+      "ticker_id": "btc_idr",
+      "price_increment": 1000.0,
+      "quantity_increment": 1e-08,
+      "median_daily_idr_2023": 8557053336.28348,
+      "days_traded_2023": 90
+    },
+    {
+      "pair": "xrpidr",
+      "symbol": "XRPIDR",
+      "ticker_id": "xrp_idr",
+      "price_increment": 1.0,
+      "quantity_increment": 1e-08,
+      "median_daily_idr_2023": 3439629299.1505527,
+      "days_traded_2023": 90
+    },
+    {
+      "pair": "ethidr",
+      "symbol": "ETHIDR",
+      "ticker_id": "eth_idr",
+      "price_increment": 1000.0,
+      "quantity_increment": 1e-08,
+      "median_daily_idr_2023": 3108274304.5017004,
+      "days_traded_2023": 90
+    },
+    {
+      "pair": "dogeidr",
+      "symbol": "DOGEIDR",
+      "ticker_id": "doge_idr",
+      "price_increment": 1.0,
+      "quantity_increment": 1e-08,
+      "median_daily_idr_2023": 1241871669.4563437,
+      "days_traded_2023": 90
+    },
+    {
+      "pair": "trxidr",
+      "symbol": "TRXIDR",
+      "ticker_id": "trx_idr",
+      "price_increment": 1.0,
+      "quantity_increment": 1e-08,
+      "median_daily_idr_2023": 909590888.900765,
+      "days_traded_2023": 90
+    },
+    {
+      "pair": "bnbidr",
+      "symbol": "BNBIDR",
+      "ticker_id": "bnb_idr",
+      "price_increment": 1.0,
+      "quantity_increment": 1e-08,
+      "median_daily_idr_2023": 655043956.753211,
+      "days_traded_2023": 90
+    }
+  ]
+}

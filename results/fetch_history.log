@@ -1,0 +1,30 @@
+  btcidr halaman 10: 649 bar
+  btcidr halaman 20: 649 bar
+  btcidr halaman 30: 649 bar
+  btcidr halaman 40: 649 bar
+  xrpidr halaman 10: 649 bar
+  xrpidr halaman 20: 649 bar
+  xrpidr halaman 30: 649 bar
+  xrpidr halaman 40: 649 bar
+  ethidr halaman 10: 649 bar
+  ethidr halaman 20: 649 bar
+  ethidr halaman 30: 649 bar
+  ethidr halaman 40: 649 bar
+  dogeidr halaman 10: 649 bar
+  dogeidr halaman 20: 649 bar
+  dogeidr halaman 30: 649 bar
+  dogeidr halaman 40: 649 bar
+  trxidr halaman 10: 649 bar
+  trxidr halaman 20: 649 bar
+  trxidr halaman 30: 649 bar
+  trxidr halaman 40: 649 bar
+  bnbidr halaman 10: 649 bar
+  bnbidr halaman 20: 649 bar
+  bnbidr halaman 30: 649 bar
+  bnbidr halaman 40: 649 bar
+btcidr: 29102 bar, 2023-07-15 00:00:00 -> 2026-11-08 13:00:00 (request total 46)
+xrpidr: 29102 bar, 2023-07-15 00:00:00 -> 2026-11-08 13:00:00 (request total 91)
+ethidr: 29102 bar, 2023-07-15 00:00:00 -> 2026-11-08 13:00:00 (request total 136)
+dogeidr: 29102 bar, 2023-07-15 00:00:00 -> 2026-11-08 13:00:00 (request total 181)
+trxidr: 29102 bar, 2023-07-15 00:00:00 -> 2026-11-08 13:00:00 (request total 226)
+bnbidr: 29102 bar, 2023-07-15 00:00:00 -> 2026-11-08 13:00:00 (request total 271)
