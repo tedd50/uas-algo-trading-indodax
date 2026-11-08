@@ -183,6 +183,12 @@ class TestBot(unittest.TestCase):
         self.assertEqual(len(r["bars_processed"]), 3)
         self.assertEqual(len(r["late_bars"]), 2)
 
+    def test_before_forward_start(self):
+        srv = 1_800_000_000 // 3600 * 3600 + 7 * 60
+        r = tick(self.st, FakeClient(srv), trigger="t", forward_start="2099-01-01T00:00:00Z")
+        self.assertEqual(r["status"], "before_forward_start")
+        self.assertIsNone(self.st.get(key("state")))
+
     def test_killswitch_logged(self):
         self.st.set(key("killswitch"), "1")
         srv = 1_800_000_000 // 3600 * 3600 + 7 * 60

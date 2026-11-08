@@ -49,6 +49,8 @@ def data_report(candles, start):
 
 
 def compute(end_ts=None):
+    if end_ts is None and C.FREEZE_UTC:
+        end_ts = ts(C.FREEZE_UTC)   # backtest resmi berakhir di waktu freeze
     uni = C.load_universe()
     meta = {u["pair"]: u for u in uni}
     costs = C.load_costs()

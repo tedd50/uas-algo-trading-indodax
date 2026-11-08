@@ -14,18 +14,21 @@ plus backtest ≥ 3 tahun dengan data historis asli Indodax dan dashboard pemban
 
 | Item | Nilai |
 |---|---|
-| Waktu freeze (UTC / WIB) | *(isi saat commit freeze; juga di `core/config.py` `FREEZE_UTC`)* |
-| Commit freeze | *(hash commit — cek `git log`)* |
-| Forward test | `FORWARD_START_UTC` → `FORWARD_END_UTC` di `core/config.py` (10 hari penuh) |
+| Waktu freeze (UTC / WIB) | 2026-11-08 15:20 UTC / 8 Nov 2026 22.20 WIB (`core/config.py` `FREEZE_UTC`) |
+| Commit freeze | commit bertag **`freeze`** — `git show freeze` (hash & waktu commit ada di riwayat GitHub) |
+| Forward test | 2026-11-08 16:00 UTC → 2026-11-18 16:00 UTC (23.00 WIB → 23.00 WIB), 10 hari penuh = 240 candle 1 jam |
+| Data & biaya saat freeze | candle s.d. bar 2026-11-08 14:00 UTC; spread/slippage = median snapshot sebelum `FREEZE_UTC` (`data/costs.json`) |
 | Yang dibekukan | `core/config.py` (parameter, sizing, risk, fee), `core/strategy.py`, `core/engine.py`, `core/execution.py`, `data/universe.json`, `data/costs.json` |
 
 Setelah commit freeze, file di atas tidak diubah. Perbaikan bug yang tidak mengubah aturan dicatat
 lewat `POST /api/admin?action=note&msg=...` (masuk log `events`) dan di tabel *Catatan perbaikan* di bawah.
 Riwayat commit tidak boleh ditulis ulang (tanpa force-push).
 
-> **Catatan jadwal (jujur):** jadwal soal menetapkan freeze Rabu 4 Nov 2026 12.00 WIB. Repositori ini
-> dibangun pada 8 Nov 2026, jadi freeze dan forward test mulai pada waktu commit freeze yang sebenarnya,
-> **bukan** diundurkan tanggalnya. Durasi forward test dan konsekuensi keterlambatan dijelaskan di refleksi.
+> **Catatan jadwal (jujur):** jadwal soal menetapkan freeze Rabu 4 Nov 2026 12.00 WIB dan forward test
+> s.d. 14 Nov. Repositori ini baru selesai 8 Nov 2026, jadi freeze dilakukan pada waktu commit freeze yang
+> sebenarnya (tanggal **tidak** diundurkan) dan forward test tetap dijalankan 10 hari penuh sampai
+> 18 Nov 2026, sehingga pengumpulan terlambat dari tenggat. Bot mengabaikan candle yang tertutup sebelum
+> `FORWARD_START_UTC` (status `before_forward_start`), sehingga state awal bot = state awal backtest ulang.
 
 Catatan perbaikan selama forward test: *(belum ada)*
 

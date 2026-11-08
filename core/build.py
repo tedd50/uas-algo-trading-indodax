@@ -19,8 +19,8 @@ def forward_window(logs, now):
     return start, end
 
 
-def build(logs, backtest_summary, fwd_candles, now, source, reflection=None, check=None):
-    start, end = forward_window(logs, now)
+def build(logs, backtest_summary, fwd_candles, now, source, reflection=None, check=None, window=None):
+    start, end = window if window else forward_window(logs, now)
     R = {"generated": dt.datetime.utcfromtimestamp(now).strftime("%Y-%m-%d %H:%M UTC"), "source": source,
          "backtest": backtest_summary, "reflection": reflection, "check": check,
          "freeze": {"freeze_utc": C.FREEZE_UTC, "commit": os.environ.get("VERCEL_GIT_COMMIT_SHA", "")[:10] or os.environ.get("GIT_COMMIT", ""),

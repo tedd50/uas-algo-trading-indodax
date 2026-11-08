@@ -27,7 +27,12 @@ def killswitch_on(store):
     return env or flag, {"env": env, "storage": flag}
 
 
-def tick(store, client=None, trigger="unknown", now_fn=time.time):
+def _iso_ts(s):
+    import datetime as _dt
+    return int(_dt.datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=_dt.timezone.utc).timestamp()) if s else None
+
+
+def tick(store, client=None, trigger="unknown", now_fn=time.time, forward_start=C.FORWARD_START_UTC):
     call_id = uuid.uuid4().hex[:12]
     t_start = now_fn()
     buf = {n: [] for n in LOG_NAMES}
@@ -49,6 +54,11 @@ def tick(store, client=None, trigger="unknown", now_fn=time.time):
         call["server_time"] = server
         last_closed = (server // C.TF_SECONDS) * C.TF_SECONDS - C.TF_SECONDS
         call["last_closed_bar"] = last_closed
+        fs = _iso_ts(forward_start)
+        if fs is not None and last_closed + C.TF_SECONDS < fs:
+            # candle ini tertutup sebelum forward test dimulai: jangan sentuh state/posisi
+            call["status"] = "before_forward_start"
+            return call
 
         raw = store.get(key("state"))
         if raw:

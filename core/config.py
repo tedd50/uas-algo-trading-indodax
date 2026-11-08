@@ -82,7 +82,8 @@ BACKTEST_START = "2023-11-01T00:00:00Z"   # >= 3 tahun sebelum forward test
 HISTORY_START = "2023-07-15T00:00:00Z"    # + pemanasan indikator (> 1.900 bar)
 UNIVERSE_LOOKBACK_START = "2023-08-03T00:00:00Z"  # likuiditas diukur 90 hari sebelum BACKTEST_START
 
-# Diisi pada commit freeze (UTC, ISO). None = belum dibekukan.
-FREEZE_UTC = None
-FORWARD_START_UTC = None
-FORWARD_END_UTC = None
+# FREEZE (commit freeze, tag git `freeze`). Jadwal soal: freeze 4 Nov 2026 12.00 WIB; repo ini baru
+# selesai 8 Nov 2026, jadi freeze & forward test dimulai sekarang (tidak diundurkan tanggalnya).
+FREEZE_UTC = "2026-11-08T15:20:00Z"          # 8 Nov 2026 22.20 WIB
+FORWARD_START_UTC = "2026-11-08T16:00:00Z"   # 8 Nov 2026 23.00 WIB: candle pertama = yang tertutup pada jam ini
+FORWARD_END_UTC = "2026-11-18T16:00:00Z"     # 18 Nov 2026 23.00 WIB (10 hari penuh, 240 candle)

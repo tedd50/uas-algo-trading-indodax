@@ -61,10 +61,11 @@ def main():
         if h % (3600 * 7) == 0:
             continue   # sengaja melewatkan sebagian jam -> uji catch-up & uptime
         server = h + 7 * 60
-        tick(st, ReplayClient(candles, costs, server), trigger="replay", now_fn=lambda s=server: s)
+        tick(st, ReplayClient(candles, costs, server), trigger="replay", now_fn=lambda s=server: s, forward_start=None)
     logs = {n: read_log(st, n) for n in LOG_NAMES if n != "snapshots"}
     bt = json.load(open(os.path.join(C.ROOT, "results", "backtest_summary.json")))
-    R = build(logs, bt, {p: candles[p] for p in pairs if p in costs}, last + 3600, "REPLAY TEST (bukan forward test)")
+    R = build(logs, bt, {p: candles[p] for p in pairs if p in costs}, last + 3600, "REPLAY TEST (bukan forward test)",
+              window=(first + 7 * 60, None))
     with open(os.path.join(a.out, "replay_dashboard.html"), "w") as f:
         f.write(render(R))
     g = R["gap"]
