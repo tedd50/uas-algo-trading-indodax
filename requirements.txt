@@ -1,1 +1,0 @@
-# Bot dan backtest hanya memakai pustaka standar Python 3 (tanpa dependensi).

@@ -1,10 +1,27 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
   "functions": {
-    "api/tick.py": { "maxDuration": 300 },
-    "api/dashboard.py": { "maxDuration": 120 },
-    "api/health.py": { "maxDuration": 60 }
+    "api/tick.py": {
+      "maxDuration": 300
+    },
+    "api/dashboard.py": {
+      "maxDuration": 120
+    },
+    "api/health.py": {
+      "maxDuration": 60
+    }
   },
-  "rewrites": [{ "source": "/", "destination": "/api/dashboard" }],
-  "crons": [{ "path": "/api/tick", "schedule": "17 0 * * *" }]
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/dashboard"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/tick",
+      "schedule": "17 0 * * *"
+    }
+  ]
 }
