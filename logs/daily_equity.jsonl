@@ -2,3 +2,4 @@
 {"type": "daily_equity", "day": "2026-11-10", "ts": 1794243742, "bar": 1794240000, "equity": 100000000.0, "cash": 100000000.0, "n_positions": 0, "call_id": "b33780af6b74"}
 {"type": "daily_equity", "day": "2026-11-11", "ts": 1794330142, "bar": 1794326400, "equity": 100000000.0, "cash": 100000000.0, "n_positions": 0, "call_id": "1de0ef8ff552"}
 {"type": "daily_equity", "day": "2026-11-12", "ts": 1794416542, "bar": 1794412800, "equity": 100000000.0, "cash": 100000000.0, "n_positions": 0, "call_id": "c72b6154c0d0"}
+{"type": "daily_equity", "day": "2026-11-13", "ts": 1794502952, "bar": 1794499200, "equity": 100000000.0, "cash": 100000000.0, "n_positions": 0, "call_id": "ba10b3362177"}
