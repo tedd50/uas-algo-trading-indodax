@@ -117,3 +117,27 @@
 {"type": "validation", "ts": 1794549733, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "a06d0928e90e"}
 {"type": "validation", "ts": 1794553333, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "0bcd170c8186"}
 {"type": "validation", "ts": 1794556934, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "da5bdf275e06"}
+{"type": "validation", "ts": 1794560534, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "8c64da8004cb"}
+{"type": "validation", "ts": 1794564133, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "e06655cc729c"}
+{"type": "validation", "ts": 1794567733, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "eaa80b73eb01"}
+{"type": "validation", "ts": 1794571333, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "6c4947f30266"}
+{"type": "validation", "ts": 1794574934, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "22d0ca1dce26"}
+{"type": "validation", "ts": 1794578533, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "7de6393a9eb7"}
+{"type": "validation", "ts": 1794582133, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "e16e755fef12"}
+{"type": "validation", "ts": 1794585734, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "15d9127070a7"}
+{"type": "validation", "ts": 1794589333, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "54677880c613"}
+{"type": "validation", "ts": 1794592933, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "d299335c45b7"}
+{"type": "validation", "ts": 1794596533, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "89438a2ad3cc"}
+{"type": "validation", "ts": 1794600133, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "cdadd79c5836"}
+{"type": "validation", "ts": 1794603733, "pair": "trxidr", "reason": "harga/volume nol pada candle terakhir; ada candle hilang / nol di jendela indikator 200 bar", "call_id": "46f932e3b0d4"}
+{"type": "validation", "ts": 1794607333, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "62256bd3774e"}
+{"type": "validation", "ts": 1794610934, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "19dba6da3fbb"}
+{"type": "validation", "ts": 1794614533, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "57b481a077c3"}
+{"type": "validation", "ts": 1794618133, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "3e1611f1fcf4"}
+{"type": "validation", "ts": 1794621733, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "192b956599e5"}
+{"type": "validation", "ts": 1794625334, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "f8272ebd40f8"}
+{"type": "validation", "ts": 1794628934, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "b768d07428c8"}
+{"type": "validation", "ts": 1794628941, "pair": "trxidr", "reason": "spread bid-ask 4.80% > 2%", "call_id": "b768d07428c8"}
+{"type": "validation", "ts": 1794632533, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "3acce21edb11"}
+{"type": "validation", "ts": 1794636133, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "84e1bbd67ee4"}
+{"type": "validation", "ts": 1794639733, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "ae95b3721dd4"}
