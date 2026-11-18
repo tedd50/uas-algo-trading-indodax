@@ -7,3 +7,4 @@
 {"type": "daily_equity", "day": "2026-11-15", "ts": 1794675741, "bar": 1794672000, "equity": 100000000.0, "cash": 100000000.0, "n_positions": 0, "call_id": "f7064e1acc5f"}
 {"type": "daily_equity", "day": "2026-11-16", "ts": 1794762141, "bar": 1794758400, "equity": 100000000.0, "cash": 100000000.0, "n_positions": 0, "call_id": "9ab261d16c29"}
 {"type": "daily_equity", "day": "2026-11-17", "ts": 1794848542, "bar": 1794844800, "equity": 100000000.0, "cash": 100000000.0, "n_positions": 0, "call_id": "0af6e022cc7e"}
+{"type": "daily_equity", "day": "2026-11-18", "ts": 1794934943, "bar": 1794931200, "equity": 100000000.0, "cash": 100000000.0, "n_positions": 0, "call_id": "1bb48f0ded45"}
