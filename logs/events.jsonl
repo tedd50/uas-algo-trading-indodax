@@ -390,3 +390,26 @@
 {"type": "validation", "ts": 1795510934, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "40aa4f368ca8"}
 {"type": "validation", "ts": 1795514531, "pair": "trxidr", "reason": "harga/volume nol pada candle terakhir; ada candle hilang / nol di jendela indikator 200 bar", "call_id": "48109a2e62a0"}
 {"type": "validation", "ts": 1795518131, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "515fc6fa6ff7"}
+{"type": "validation", "ts": 1795521731, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "bbc11fac99a8"}
+{"type": "validation", "ts": 1795525332, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "4260bede5c99"}
+{"type": "validation", "ts": 1795528932, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "a9bb36acd778"}
+{"type": "validation", "ts": 1795532533, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "f614543d3681"}
+{"type": "validation", "ts": 1795536132, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "ca35e6bcec7a"}
+{"type": "validation", "ts": 1795539734, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "b64c2f40b0ee"}
+{"type": "validation", "ts": 1795543332, "pair": "trxidr", "reason": "harga/volume nol pada candle terakhir; ada candle hilang / nol di jendela indikator 200 bar", "call_id": "45779c456462"}
+{"type": "validation", "ts": 1795546932, "pair": "trxidr", "reason": "harga/volume nol pada candle terakhir; ada candle hilang / nol di jendela indikator 200 bar", "call_id": "7f816d133d30"}
+{"type": "validation", "ts": 1795550534, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "a8a412c23ba7"}
+{"type": "validation", "ts": 1795554131, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "52a8b1a5f38f"}
+{"type": "validation", "ts": 1795557734, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "915dee473b9c"}
+{"type": "validation", "ts": 1795561333, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "616fe4392b3e"}
+{"type": "validation", "ts": 1795564932, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "8b7c43da3d48"}
+{"type": "validation", "ts": 1795568528, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "80f0ef391b8b"}
+{"type": "validation", "ts": 1795572133, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "9ccde8e21dc5"}
+{"type": "validation", "ts": 1795575731, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "6058462a2ff3"}
+{"type": "validation", "ts": 1795579331, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "089508a5cf2d"}
+{"type": "validation", "ts": 1795582928, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "776ebf2b4ec5"}
+{"type": "validation", "ts": 1795586528, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "aed775abd0b1"}
+{"type": "validation", "ts": 1795590131, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "22d730891a5b"}
+{"type": "validation", "ts": 1795593730, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "e34d40630913"}
+{"type": "validation", "ts": 1795597334, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "74c3e48963a0"}
+{"type": "validation", "ts": 1795600932, "pair": "trxidr", "reason": "ada candle hilang / nol di jendela indikator 200 bar", "call_id": "bebf042a9a50"}
